@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', cursive;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  overflow-x: hidden;
+  margin: 2rem 1.5rem;
+}
+
+ul, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+/* ######### NAVIGATION BAR ########## */
+
+.nav-bar {
+  justify-content: space-between;
+}
+
+.logo  {
+  padding: 14px 0;
+}
+
+.logo a {
+  color: #000;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.logo h2 {
+  font-size: 16px;
+  position: relative;
+}
+
+.topnav {
+  overflow: hidden;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  position: relative;
+}
+
+.topnav a {
+  position: relative;
+  display: none;
+  color: rgb(51, 50, 50);
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+.active {
+  border-bottom: 1px solid;
+  padding-bottom: 1px;
+}
+
+.inactive {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.topnav a:nth-child(4) {
+  margin-bottom: 100px;
+}
+
+.topnav.responsive {
+  position: relative;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.topnav.responsive a {
+  display: block;
+  text-align: center;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-items a {
+  font-size: 3rem;
+  color: #000;
+}
+
+.nav-icons {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+
+.social-icons  {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.fa-bars-staggered {
+  font-size: 2rem;
+}
+
+
+/* ######### MAIN SECTION ########## */
+
+.main-section {
+  margin-top: 4rem;
+}
+
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnail-width {
+  flex-grow: 1;
+  width: 350px;
+}
+
+.thumbnail-width img, .thumbnail {
+  max-width: 100%;
+  min-height: 350px; 
+  object-fit: cover;
+  vertical-align: bottom;
+  padding: 2px;
+}
+
+
+/* ######### ABOUT SECTION ########## */
+
+.thumbnail {
+  border: none;
+  min-height: auto;
+  margin: 10px 15px;
+}
+
+.about-section {
+  margin-bottom: 50px;
+}
+
+.about-section img {
+  max-height: 350px;
+}
+
+.about__content, .about__details {
+  text-align: center;
+  margin-top: 5em;
+}
+
+.about__header h2 {
+  font-weight: 600;
+  margin-bottom: 40px;
+  font-size: 35px;
+}
+
+.mail-btn {
+  padding: 20px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  -webkit-box-shadow: 6px 10px 2px 0px rgba(0,0,0,0.44); 
+  box-shadow: 6px 10px 2px 0px rgba(0,0,0,0.44);
+}
+
+.mail-btn:hover {
+  -webkit-box-shadow: 5px 5px 0px 0px #000000, 10px 10px 0px 0px #1d1d1e, 15px 15px 0px 0px #222222, 20px 20px 0px 0px #393a3b, 25px 25px 0px 0px #505050, 6px 10px 2px 0px rgba(0,0,0,0); 
+box-shadow:  5px 5px 0px 0px #000000, 10px 10px 0px 0px #1d1d1e, 15px 15px 0px 0px #222222, 20px 20px 0px 0px #393a3b, 25px 25px 0px 0px #505050, 6px 10px 2px 0px rgba(0,0,0,0); 
+}
+
+/* ######### CONTACT SECTION ########## */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin: 50px auto;
+  justify-content: center;
+}
+
+.contact-section i {
+  font-size: 200px;
+}
+
+.contact-section a {
+  color: #000;
+  font-size: 20px;
+}
+
+.contact__icons h5 {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin-top: 28px;
+}
+
+
+/* ######### STREAM SECTION ########## */
+
+.stream-section {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.stream-thumbnail {
+  margin: initial;
+}
+
+.stream-section .stream__embed {
+  position: relative;
+}
+
+.stream-section span {
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.667);
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+}
+
+#youtubeThumbnail {
+  display: none;
+  width: 360px;
+  height: 210px;
+}
+
+.track-details h2 {
+  font-size: 24px;
+}
+
+.track-details h5 {
+  text-align: center;
+}
+
+/* ######### GALLERY SECTION ########## */
+
+.gallery-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.gallery-section .column {
+  flex: 100%;
+  max-width: 100%;
+}
+
+.gallery-section .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+
+/* ######### TABLETS && DESKTOPS ########## */
+
+@media screen and (min-width: 600px) {
+  body {
+    margin: 2rem 80px;
+  }
+
+  .logo h2 {
+    font-size: 20px;
+    margin: auto;
+  }
+
+  .nav-bar {
+    margin-top: 3rem;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  .topnav {
+    margin: initial;
+    display: initial;
+    margin-top: auto;
+  }
+
+  .topnav, .nav-bar {
+    display: flex;
+  }
+
+  .topnav a {
+    padding: 14px 16px;
+    font-size: 17px;
+    margin-right: initial;
+    margin-top: initial;
+    display: block;
+  }
+
+  .topnav a:hover {
+    width: inherit;
+    border-radius: 15px;
+  }
+
+  .topnav a:nth-child(4) {
+    margin-bottom: initial;
+  }
+
+  .topnav.responsive {
+    min-height: initial;
+    padding-top: initial;
+  }
+
+  .nav-items {
+    display: flex;
+    padding-top: initial;
+    padding-right: initial;
+    flex-direction: row;
+    align-items: initial;
+  }
+
+  .nav-icons {
+    display: none;
+  }
+
+  .social-icons  {
+    gap: initial;
+  }
+
+  .main-section {
+    justify-content: initial;
+    margin-top: 8rem;
+  }
+
+  .about__photos {
+    display: flex;
+  }
+
+  .about__content {
+    display: flex;
+  }
+
+  .thumbnail-width img {
+    padding: 5px;
+  }
+
+  .thumbnail {
+    margin: initial;
+  }
+
+  .about__content, .about__details {
+    text-align: initial;
+  }
+
+  .about__details {
+    margin-top: 1em;
+  }
+
+  .contact-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 350px;
+    justify-content: center;
+  }
+
+  .stream-section {
+    flex-direction: row;
+  }
+
+  .stream-section h2 {
+    font-size: 32px;
+  }
+
+  .stream-section h5 {
+    text-align: left;
+  }
+
+  .stream-section span {
+    font-size: 100px;
+  }
+
+  #youtubeThumbnail {
+    min-width: 1000px;
+    min-height: 615px;
+  }
+
+  .track-details {
+    margin: 20px;
+  }
+
+  .gallery-section .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+}
+
+
+/* ######### DESKTOPS ONLY ########## */
+@media screen and (min-width: 768px) {
+  .gallery-section .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+}
